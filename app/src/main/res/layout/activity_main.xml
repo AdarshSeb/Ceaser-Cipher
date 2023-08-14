@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Ceaser Cipher"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et1"
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:onClick="remove1"
+            android:text="Enter plain/cipher Text" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:onClick="remove2"
+            android:inputType="textPersonName"
+            android:text="enter key" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:onClick="encrypt"
+            android:text="ECRYPT" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="decrypt"
+            android:text="DECRYPT" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
